@@ -27,9 +27,9 @@ const Film = props => {
             }}
         >
             <Box>
-                <StarIcon opacity={winner ? '1' : '0'} />
+                <StarIcon opacity={winner === 'True' ? '1' : '0'} />
                 <Text
-                    fontSize='38px'
+                    fontSize='16px'
                 >
                     {name}
                 </Text>
@@ -40,7 +40,7 @@ const Film = props => {
                     <Text>{year_film}</Text>
                 </Box>
             </Box>
-            <Text fontSize='44px' fontWeight='bold' color='rgb(199, 159, 39)'>{year_ceremony}</Text>
+            <Text fontSize='24px' fontWeight='bold' color='rgb(199, 159, 39)'>{year_ceremony}</Text>
         </Flex>
     );
 };

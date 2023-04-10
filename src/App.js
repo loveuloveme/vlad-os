@@ -15,10 +15,12 @@ function App() {
             </Box>
             <HStack
                 spacing='15px'
+                align='flex-start'
             >
-                <Search t='hg' name='Владам' />
-                <Search t='hg' name='Лерам'/>
-                <Search t='hg' name='Сергеям'/>
+                <Search t='name' name='Именам' />
+                <Search t='film' name='Фильмам'/>
+                <Search t='category' name='Категориям'/>
+                <Search t='wiki' name='Wiki'/>
             </HStack>
         </Container>
     );
