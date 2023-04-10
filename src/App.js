@@ -1,4 +1,4 @@
-import { Box, Container, HStack } from "@chakra-ui/react";
+import { Box, Container, HStack, SimpleGrid } from "@chakra-ui/react";
 import Search from "./components/Search";
 import Wiki from "./components/Wiki";
 
@@ -14,15 +14,15 @@ function App() {
             >
 
             </Box>
-            <HStack
-                spacing='15px'
-                align='flex-start'
+            <SimpleGrid
+                columns='4'
+                gap='10px'
             >
                 <Search t='name' name='Именам' />
                 <Search t='film' name='Фильмам'/>
                 <Search t='category' name='Категориям'/>
                 <Search t='wiki' name='Wiki' node={Wiki} />
-            </HStack>
+            </SimpleGrid>
         </Container>
     );
 }

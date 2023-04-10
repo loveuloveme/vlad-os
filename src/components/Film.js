@@ -11,7 +11,8 @@ const Film = props => {
         name,
         film,
         winner,
-        _id
+        _id,
+        ...rest
     } = props;
 
     return (
@@ -26,6 +27,8 @@ const Film = props => {
                 bg: '#f2f2f2'
             }}
             onClick={() => {navigator.clipboard.writeText(_id)}}
+
+            {...rest}
         >
             <Box>
                 <StarIcon opacity={winner === 'True' ? '1' : '0'} />

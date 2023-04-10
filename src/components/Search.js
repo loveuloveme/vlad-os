@@ -72,7 +72,7 @@ const Search = props => {
                 spacing='5px'
                 pb='10px'
             >
-                {data.map((film, i)=> React.createElement(node, {...film, key: i}))}
+                {data.map((film, i)=> React.createElement(node, {...film, key: i }))}
             </VStack>
         </Flex>
     );
