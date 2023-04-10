@@ -1,5 +1,6 @@
 import { Box, Container, HStack } from "@chakra-ui/react";
 import Search from "./components/Search";
+import Wiki from "./components/Wiki";
 
 function App() {
     return (
@@ -20,7 +21,7 @@ function App() {
                 <Search t='name' name='Именам' />
                 <Search t='film' name='Фильмам'/>
                 <Search t='category' name='Категориям'/>
-                <Search t='wiki' name='Wiki'/>
+                <Search t='wiki' name='Wiki' node={Wiki} />
             </HStack>
         </Container>
     );

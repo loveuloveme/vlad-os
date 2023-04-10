@@ -5,7 +5,7 @@ import Film from './Film';
 import { HOST } from '../config';
 
 const Search = props => {
-    const { name, t } = props;
+    const { name, t, node = Film } = props;
 
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState([]);
@@ -72,7 +72,7 @@ const Search = props => {
                 spacing='5px'
                 pb='10px'
             >
-                {data.map((film, i)=> <Film {...film} key={i} />)}
+                {data.map((film, i)=> React.createElement(node, {...film, key: i}))}
             </VStack>
         </Flex>
     );
