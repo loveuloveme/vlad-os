@@ -1,4 +1,4 @@
-import { Box, Heading, Link } from '@chakra-ui/layout';
+import { Box, Text, Link } from '@chakra-ui/layout';
 import React from 'react';
 
 const Wiki = props => {
@@ -14,8 +14,8 @@ const Wiki = props => {
                 bg: '#f2f2f2'
             }}
         >
-            <Heading fontFamily='Times New Roman' fontWeight='400'>{name}</Heading>
-            <Link href={url} color='#3366cc'>{url}</Link>
+            <Text fontFamily='Times New Roman' fontWeight='400' fontSize='16px'>{name}</Text>
+            <Link href={url} color='#3366cc' fontSize='12px'>{url}</Link>
         </Box>
     );
 };

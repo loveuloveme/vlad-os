@@ -25,6 +25,7 @@ const Film = props => {
             _hover={{
                 bg: '#f2f2f2'
             }}
+            onClick={() => {navigator.clipboard.writeText(_id)}}
         >
             <Box>
                 <StarIcon opacity={winner === 'True' ? '1' : '0'} />
